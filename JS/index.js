@@ -5,6 +5,6 @@ function randomInteger(min, max) {
 
 const userName = prompt('Come ti chiami');
 const userSurname = prompt('Qual è il tuo cognome');
-const userColor = prompt('Qual è il tuo colore preferito') + ( randomInteger(1, 999) );
-let pasgen = document.getElementById('pasgen').innerHTML = userName + userSurname + userColor;
+const userColor = prompt('Qual è il tuo colore preferito');
+let pasgen = document.getElementById('pasgen').innerHTML = userName + userSurname + userColor + ( randomInteger(1, 999) );
 

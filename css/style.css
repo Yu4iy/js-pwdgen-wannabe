@@ -8,10 +8,11 @@
 body {
 	background-color: #bef43f;
 	background-image: linear-gradient(132deg, #bef43f 0%, #16A085 100%);
+	background-repeat: no-repeat;
 }
 .container{
-	width: 1280px;
-	height: 100vh;
+	min-width: 1280px;
+	min-height: 100vh;
 	margin: 0 auto;
 	display: flex;
 	align-items: center;
@@ -52,4 +53,29 @@ body {
 .btn:hover{
 	color: rgb(255, 255, 255);
 	border: 4px solid rgb(255, 255, 255);	
+}
+
+@media screen and (max-width: 1280px) {
+	.container{
+		min-width: 100%;
+	}
+}
+
+@media screen and (max-width: 618px) {
+	.box {
+		min-width: 100%;
+	}
+	body{
+		padding: 0 10px;
+	}
+}
+
+@media screen and (max-width: 466px) {
+	.btn {
+		position: absolute;
+		top: 140%;
+		left: 50%;
+		transform: translate(-50%, -50%);
+		text-align: center;
+	}
 }
