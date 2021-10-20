@@ -2,4 +2,32 @@
 	margin: 0;
 	padding: 0;
 	box-sizing: border-box;
+	font-family:'Times New Roman' ; 
+}
+body {
+background-color: #bef43f;
+background-image: linear-gradient(132deg, #bef43f 0%, #16A085 100%);
+	
+}
+.container{
+	width: 1280px;
+	height: 100vh;
+	margin: 0 auto;
+	display: flex;
+	align-items: center;
+}
+.box {
+	min-width: 600px;
+	min-height: 100px;
+	margin: auto;
+	background: rgb(56, 56, 56);
+	border: 8px double black;	
+	border-radius: 20px;
+}
+.main-txt {
+	text-align: center;
+	color: rgb(240, 240, 240);
+	font-family: Verdana, Geneva, Tahoma, sans-serif;
+	text-transform: uppercase;
+	cursor: pointer;
 }
